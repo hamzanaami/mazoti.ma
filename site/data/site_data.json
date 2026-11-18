@@ -1,0 +1,602 @@
+{
+ "schema": 1,
+ "generated_on": "2026-11-18",
+ "model_version": "0.0.1",
+ "unit": "MAD/L",
+ "constants": {
+  "vat_rate": {
+   "value": 0.1,
+   "unit": "ratio",
+   "status": "secondary",
+   "source": "Press (Le360, 2026) reports a 10% rate on fuel, charged on import and again at the pump. Confirm against the Code général des impôts.",
+   "as_of": "2026-03"
+  },
+  "tic_gasoil": {
+   "value": 2.42,
+   "unit": "MAD/L",
+   "status": "secondary",
+   "source": "https://ecoactu.ma/?p=255474",
+   "as_of": "2026"
+  },
+  "tic_ssp": {
+   "value": 3.76,
+   "unit": "MAD/L",
+   "status": "secondary",
+   "source": "https://ecoactu.ma/?p=255474 ('about 3.76')",
+   "as_of": "2026"
+  },
+  "density_gasoil": {
+   "value": 0.84,
+   "unit": "kg/L",
+   "status": "to_verify",
+   "source": "textbook value",
+   "as_of": "n/a"
+  },
+  "density_ssp": {
+   "value": 0.745,
+   "unit": "kg/L",
+   "status": "to_verify",
+   "source": "textbook value",
+   "as_of": "n/a"
+  }
+ },
+ "structure": {
+  "gasoil": {
+   "product": "gasoil",
+   "period": "2025-Q4",
+   "status": "verified",
+   "source": "https://conseil-concurrence.ma/wp-content/uploads/2026/06/Reporting-du-4eme-trimestre-de-lannee-2025-relatif-au-suivi-des-engagements-pris-par-les-societes-de-distribution-en-gros-du-gasoil-et-dessence-FR.pdf",
+   "as_of": "2026-06",
+   "reported": {
+    "cif": 5.59,
+    "purchase_cost": 8.1,
+    "cession_price": 9.38,
+    "pump": 10.87,
+    "weighted_gross_margin": 1.23
+   },
+   "components": {
+    "cif": 5.59,
+    "approach": 0.08999999999999986,
+    "tic": 2.42,
+    "gross_margin": 1.2800000000000011,
+    "station_margin": 0.5018181818181802,
+    "vat": 0.9881818181818183
+   },
+   "subtotals": {
+    "purchase_cost": 8.1,
+    "cession_price": 9.38,
+    "ex_vat": 9.881818181818181,
+    "pump": 10.87
+   },
+   "groups": {
+    "product_cost": 5.68,
+    "taxes": 3.408181818181818,
+    "margins": 1.7818181818181813
+   },
+   "tax_share": 0.3135401856653007,
+   "net_of_tax": 7.461818181818181,
+   "reported_tax_share_q4_2024": {
+    "value": 0.31,
+    "unit": "ratio",
+    "status": "seen",
+    "source": "https://conseil-concurrence.ma/wp-content/uploads/2025/04/Rapport-Reporting-FR-N°4-2025.pdf",
+    "as_of": "2025-04"
+   }
+  },
+  "ssp": {
+   "product": "ssp",
+   "period": "2025-Q4",
+   "status": "verified",
+   "source": "https://conseil-concurrence.ma/wp-content/uploads/2026/06/Reporting-du-4eme-trimestre-de-lannee-2025-relatif-au-suivi-des-engagements-pris-par-les-societes-de-distribution-en-gros-du-gasoil-et-dessence-FR.pdf",
+   "as_of": "2026-06",
+   "reported": {
+    "cif": 5.12,
+    "purchase_cost": 9.0,
+    "cession_price": 11.06,
+    "pump": 12.82,
+    "weighted_gross_margin": 1.85
+   },
+   "components": {
+    "cif": 5.12,
+    "approach": 0.1200000000000001,
+    "tic": 3.76,
+    "gross_margin": 2.0600000000000005,
+    "station_margin": 0.5945454545454538,
+    "vat": 1.165454545454546
+   },
+   "subtotals": {
+    "purchase_cost": 9.0,
+    "cession_price": 11.06,
+    "ex_vat": 11.654545454545454,
+    "pump": 12.82
+   },
+   "groups": {
+    "product_cost": 5.24,
+    "taxes": 4.925454545454546,
+    "margins": 2.6545454545454543
+   },
+   "tax_share": 0.3842008225783577,
+   "net_of_tax": 7.8945454545454545,
+   "reported_tax_share_q4_2024": {
+    "value": 0.38,
+    "unit": "ratio",
+    "status": "seen",
+    "source": "https://conseil-concurrence.ma/wp-content/uploads/2025/04/Rapport-Reporting-FR-N°4-2025.pdf",
+    "as_of": "2025-04"
+   }
+  }
+ },
+ "validation": [
+  {
+   "product": "gasoil",
+   "quantity": "approach",
+   "model_value": 0.08999999999999986,
+   "reference_value": null,
+   "low": 0.0,
+   "high": 0.25,
+   "passed": true
+  },
+  {
+   "product": "gasoil",
+   "quantity": "gross_margin",
+   "model_value": 1.2800000000000011,
+   "reference_value": 1.23,
+   "low": null,
+   "high": null,
+   "passed": null
+  },
+  {
+   "product": "gasoil",
+   "quantity": "station_margin",
+   "model_value": 0.5018181818181802,
+   "reference_value": null,
+   "low": 0.3,
+   "high": 0.8,
+   "passed": true
+  },
+  {
+   "product": "gasoil",
+   "quantity": "tax_share",
+   "model_value": 0.3135401856653007,
+   "reference_value": 0.31,
+   "low": 0.29,
+   "high": 0.33,
+   "passed": true
+  },
+  {
+   "product": "gasoil",
+   "quantity": "roundtrip",
+   "model_value": 10.87,
+   "reference_value": 10.87,
+   "low": null,
+   "high": null,
+   "passed": true
+  },
+  {
+   "product": "ssp",
+   "quantity": "approach",
+   "model_value": 0.1200000000000001,
+   "reference_value": null,
+   "low": 0.0,
+   "high": 0.25,
+   "passed": true
+  },
+  {
+   "product": "ssp",
+   "quantity": "gross_margin",
+   "model_value": 2.0600000000000005,
+   "reference_value": 1.85,
+   "low": null,
+   "high": null,
+   "passed": null
+  },
+  {
+   "product": "ssp",
+   "quantity": "station_margin",
+   "model_value": 0.5945454545454538,
+   "reference_value": null,
+   "low": 0.3,
+   "high": 0.9,
+   "passed": true
+  },
+  {
+   "product": "ssp",
+   "quantity": "tax_share",
+   "model_value": 0.3842008225783577,
+   "reference_value": 0.38,
+   "low": 0.36,
+   "high": 0.4,
+   "passed": true
+  },
+  {
+   "product": "ssp",
+   "quantity": "roundtrip",
+   "model_value": 12.82,
+   "reference_value": 12.82,
+   "low": null,
+   "high": null,
+   "passed": true
+  }
+ ],
+ "pass_through": {
+  "gasoil": {
+   "product": "gasoil",
+   "window": "early March 2026",
+   "delta_cif": 2.92,
+   "delta_pump": 2.03,
+   "full_pass_through_delta_pump": 3.212,
+   "raw": 0.6952054794520548,
+   "adjusted": 0.6320049813200497,
+   "status": "secondary",
+   "source": "https://northafricapost.com/?p=95972",
+   "as_of": "2026-03"
+  },
+  "ssp": {
+   "product": "ssp",
+   "window": "early March 2026",
+   "delta_cif": 1.26,
+   "delta_pump": 1.43,
+   "full_pass_through_delta_pump": 1.3860000000000001,
+   "raw": 1.1349206349206349,
+   "adjusted": 1.0317460317460316,
+   "status": "secondary",
+   "source": "https://northafricapost.com/?p=95972",
+   "as_of": "2026-03"
+  }
+ },
+ "inventory": {
+  "status": "illustrative",
+  "product": "gasoil",
+  "cif_path": [
+   5.6,
+   5.6,
+   5.6,
+   6.0,
+   6.4,
+   6.8,
+   7.2,
+   7.6,
+   7.6,
+   7.6,
+   7.6,
+   7.3,
+   7.0,
+   6.7,
+   6.4,
+   6.1,
+   5.8,
+   5.5,
+   5.2,
+   5.2,
+   5.2,
+   5.2,
+   5.2,
+   5.2
+  ],
+  "approach": 0.08999999999999986,
+  "tic": 2.42,
+  "gross_margin": 1.2800000000000011,
+  "period_days": 15,
+  "default_stock_days": 30,
+  "stock_facts": {
+   "legal_minimum_days": {
+    "value": 60,
+    "status": "to_verify",
+    "source": "docs/theory/01-price-structure.md, section 7 (press; source not recorded)",
+    "as_of": "n/a"
+   },
+   "reported_days": {
+    "value": {
+     "gasoil": 47,
+     "ssp": 49
+    },
+    "status": "secondary",
+    "source": "https://www.challenge.ma/energie-des-defis-strategiques-face-a-une-dependance-structurelle-322400/",
+    "as_of": "n/a"
+   }
+  }
+ },
+ "converter_example": {
+  "quote_usd_per_t": 700.0,
+  "usdmad": 9.0
+ },
+ "context": {
+  "liberalisation": {
+   "value": "2015-12-01",
+   "status": "seen",
+   "source": "https://www.esmap.org/node/13180",
+   "as_of": "2015-12"
+  },
+  "revisions": {
+   "value": "1st and 16th of each month",
+   "status": "secondary",
+   "source": "https://lematin.ma/economie/prix-des-carburants-lessence-baisse-de-50-centimes-et-le-gasoil-de-20/375828",
+   "as_of": "2026-11"
+  },
+  "settlement": {
+   "value": 1840410426,
+   "unit": "MAD",
+   "date": "2023-11-23",
+   "status": "secondary",
+   "source": "https://fr.hespress.com/340704-340704.html",
+   "as_of": "2023-11"
+  },
+  "distributors_followed": {
+   "value": 9,
+   "status": "verified",
+   "source": "https://conseil-concurrence.ma/wp-content/uploads/2026/06/Reporting-du-4eme-trimestre-de-lannee-2025-relatif-au-suivi-des-engagements-pris-par-les-societes-de-distribution-en-gros-du-gasoil-et-dessence-FR.pdf",
+   "as_of": "2026-06"
+  }
+ },
+ "tests": {
+  "passed": 19,
+  "failed": 0,
+  "run_on": "2026-11-18",
+  "command": "pytest -q",
+  "ok": true,
+  "summary": "19 passed in 0.10s"
+ },
+ "reference_cases": {
+  "quote_to_mad_per_l": [
+   {
+    "args": [
+     700.0,
+     9.0,
+     0.84
+    ],
+    "result": 5.292
+   },
+   {
+    "args": [
+     650.0,
+     10.2,
+     0.745
+    ],
+    "result": 4.939349999999999
+   }
+  ],
+  "build_up": [
+   {
+    "args": [
+     5.59,
+     2.42,
+     0.09,
+     1.28,
+     0.5,
+     0.1
+    ],
+    "result": {
+     "cif": 5.59,
+     "approach": 0.09,
+     "tic": 2.42,
+     "gross_margin": 1.28,
+     "station_margin": 0.5,
+     "vat": 0.988,
+     "pump": 10.867999999999999,
+     "purchase_cost": 8.1,
+     "cession_price": 9.379999999999999,
+     "tax_share": 0.31358115568641887
+    }
+   },
+   {
+    "args": [
+     7.0,
+     2.42,
+     0.1,
+     1.5,
+     0.6,
+     0.1
+    ],
+    "result": {
+     "cif": 7.0,
+     "approach": 0.1,
+     "tic": 2.42,
+     "gross_margin": 1.5,
+     "station_margin": 0.6,
+     "vat": 1.162,
+     "pump": 12.782,
+     "purchase_cost": 9.52,
+     "cession_price": 11.02,
+     "tax_share": 0.2802378344547019
+    }
+   },
+   {
+    "args": [
+     3.0,
+     3.76,
+     0.12,
+     2.06,
+     0.6,
+     0.1
+    ],
+    "result": {
+     "cif": 3.0,
+     "approach": 0.12,
+     "tic": 3.76,
+     "gross_margin": 2.06,
+     "station_margin": 0.6,
+     "vat": 0.954,
+     "pump": 10.494,
+     "purchase_cost": 6.88,
+     "cession_price": 8.94,
+     "tax_share": 0.44920907185058123
+    }
+   }
+  ],
+  "decompose": [
+   {
+    "args": [
+     5.59,
+     8.1,
+     9.38,
+     10.87,
+     2.42,
+     0.1
+    ],
+    "result": {
+     "cif": 5.59,
+     "approach": 0.08999999999999986,
+     "tic": 2.42,
+     "gross_margin": 1.2800000000000011,
+     "station_margin": 0.5018181818181802,
+     "vat": 0.9881818181818183,
+     "pump": 10.87,
+     "purchase_cost": 8.1,
+     "cession_price": 9.38,
+     "tax_share": 0.3135401856653007
+    }
+   },
+   {
+    "args": [
+     5.12,
+     9.0,
+     11.06,
+     12.82,
+     3.76,
+     0.1
+    ],
+    "result": {
+     "cif": 5.12,
+     "approach": 0.1200000000000001,
+     "tic": 3.76,
+     "gross_margin": 2.0600000000000005,
+     "station_margin": 0.5945454545454538,
+     "vat": 1.165454545454546,
+     "pump": 12.82,
+     "purchase_cost": 9.0,
+     "cession_price": 11.06,
+     "tax_share": 0.3842008225783577
+    }
+   }
+  ],
+  "pass_through_rate": [
+   {
+    "args": [
+     2.03,
+     2.92,
+     0.1,
+     false
+    ],
+    "result": 0.6952054794520548
+   },
+   {
+    "args": [
+     2.03,
+     2.92,
+     0.1,
+     true
+    ],
+    "result": 0.6320049813200497
+   },
+   {
+    "args": [
+     1.43,
+     1.26,
+     0.1,
+     false
+    ],
+    "result": 1.1349206349206349
+   },
+   {
+    "args": [
+     1.43,
+     1.26,
+     0.1,
+     true
+    ],
+    "result": 1.0317460317460316
+   }
+  ],
+  "full_pass_through": [
+   {
+    "args": [
+     1.0,
+     0.1
+    ],
+    "result": 1.1
+   }
+  ],
+  "wac_weight": [
+   {
+    "args": [
+     0,
+     15.0
+    ],
+    "result": 1.0
+   },
+   {
+    "args": [
+     30,
+     15.0
+    ],
+    "result": 0.3333333333333333
+   },
+   {
+    "args": [
+     60,
+     15.0
+    ],
+    "result": 0.2
+   }
+  ],
+  "weighted_average_cost": [
+   {
+    "args": [
+     [
+      8.11,
+      8.11,
+      8.11,
+      8.51,
+      8.91,
+      9.309999999999999,
+      9.71,
+      10.11,
+      10.11,
+      10.11,
+      10.11,
+      9.809999999999999,
+      9.51,
+      9.21,
+      8.91,
+      8.61,
+      8.309999999999999,
+      8.01,
+      7.71,
+      7.71,
+      7.71,
+      7.71,
+      7.71,
+      7.71
+     ],
+     0.3333333333333333
+    ],
+    "result": [
+     8.11,
+     8.11,
+     8.11,
+     8.243333333333334,
+     8.465555555555557,
+     8.747037037037039,
+     9.068024691358026,
+     9.415349794238685,
+     9.64689986282579,
+     9.801266575217195,
+     9.904177716811464,
+     9.872785144540977,
+     9.75185676302732,
+     9.571237842018213,
+     9.350825228012143,
+     9.103883485341429,
+     8.839255656894286,
+     8.562837104596191,
+     8.278558069730794,
+     8.089038713153863,
+     7.96269247543591,
+     7.878461650290607,
+     7.822307766860405,
+     7.784871844573603
+    ]
+   }
+  ]
+ }
+}

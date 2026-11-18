@@ -110,6 +110,9 @@ calculators, other products (butane, fuel oil), a public API, and an explainer s
 - Price-structure model and tests (`src/mazoti/pricing.py`, `tests/test_pricing.py`): reproduces CC Q4 2025
   gross margins (1.28 and 2.06 vs CC weighted 1.23 and 1.85), tax shares (31.4% and 38.4%) and implies
   small positive approach costs (0.09 and 0.12 MAD/L).
+- Static showcase site in `site/` (ADR-0004): Arabic first, plus French and English. All numbers
+  are generated from the model by `scripts/build_site_data.py`. It shows phases 0–1 only, with no
+  gap figures.
 - Finding to confirm in task 1.1: the CC's pass-through ratio (pump price incl. VAT over CIF excl. VAT)
   appears to overstate the VAT-free picture by 10%. Diesel 69.5% becomes about 63%, gasoline 113% becomes
   about 103%.

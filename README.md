@@ -24,8 +24,10 @@ transparent, reproducible model and, later, a website.
 | `docs/sources.md` | Data sources and reading list, with verification status |
 | `docs/glossary.md` | FR / AR / EN vocabulary |
 | `docs/decisions/` | Architecture and modelling decision records |
-| `src/mazoti/` | Code (starting with the price-structure model) |
+| `src/mazoti/` | Code: price-structure model, CC figures, inventory model, checks, site data |
 | `tests/` | Tests, including the check against Competition Council figures |
+| `site/` | Static showcase site (Arabic first, French, English), see below |
+| `scripts/` | `build_site_data.py`: writes the site's numbers from the model |
 | `data/` | Local data, not committed |
 
 ## Quick start
@@ -35,6 +37,25 @@ python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 pytest
 ```
+
+## Showcase site
+
+`site/` is a static page that shows the work so far:
+- the price structure and the interactive price builder;
+- the VAT effect on pass-through ratios;
+- the inventory lag;
+- the validation against Competition Council figures;
+- the method, the roadmap and the sources.
+
+It opens in Arabic, and French and English are one click away. There is no build step. Its
+numbers come from the Python model:
+
+```bash
+python scripts/build_site_data.py   # runs the tests, then writes site/data/
+python -m http.server 8765 --directory site
+```
+
+Then open <http://localhost:8765>. Rationale and limits: `docs/decisions/0004-showcase-site.md`.
 
 ## Principles
 

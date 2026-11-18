@@ -67,6 +67,7 @@ python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 pytest            # the price-structure model must reproduce the CC Q4 2025 check
 ruff check .
+python scripts/build_site_data.py   # regenerate site/data/ after changing constants or CC figures
 ```
 
 ## Key facts to keep straight

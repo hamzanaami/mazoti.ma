@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mazoti.ma</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="description" content="شفافية أسعار الوقود في المغرب: ثمن المحطة مقارنة بكلفة الشراء والضرائب والهوامش.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    /* Apply the saved language and theme before first paint (no flash). */
+    (function () {
+      var d = document.documentElement, lang = "ar", theme = "";
+      try {
+        var q = new URLSearchParams(location.search).get("lang");
+        lang = q || localStorage.getItem("mazoti.lang") || "ar";
+        theme = localStorage.getItem("mazoti.theme") || "";
+      } catch (e) {}
+      if (["ar", "fr", "en"].indexOf(lang) < 0) lang = "ar";
+      d.lang = lang;
+      d.dir = lang === "ar" ? "rtl" : "ltr";
+      if (theme === "light" || theme === "dark") d.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top" aria-label="mazoti.ma">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2.5c-3.6 4.7-6.5 8.3-6.5 11.6a6.5 6.5 0 0 0 13 0C18.5 10.8 15.6 7.2 12 2.5z" fill="currentColor"/></svg>
+        </span>
+        <span class="brand-name">mazoti<span class="brand-tld">.ma</span></span>
+        <span class="brand-tag" data-i18n="brand.tag">شفافية أسعار الوقود في المغرب</span>
+      </a>
+      <div class="header-tools">
+        <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.label">
+          <button type="button" data-lang="ar" lang="ar" aria-label="العربية"><span class="lang-full">العربية</span><span class="lang-short" aria-hidden="true">ع</span></button>
+          <button type="button" data-lang="fr" lang="fr" aria-label="Français"><span class="lang-full">Français</span><span class="lang-short" aria-hidden="true">FR</span></button>
+          <button type="button" data-lang="en" lang="en" aria-label="English"><span class="lang-full">English</span><span class="lang-short" aria-hidden="true">EN</span></button>
+        </div>
+        <button type="button" class="icon-btn" id="themeToggle" data-i18n-attr="aria-label:theme.toggle,title:theme.toggle">
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="wrap site-nav" data-i18n-attr="aria-label:nav.label">
+      <a href="#structure" data-i18n="nav.structure"></a>
+      <a href="#builder" data-i18n="nav.builder"></a>
+      <a href="#passthrough" data-i18n="nav.passthrough"></a>
+      <a href="#stocks" data-i18n="nav.stocks"></a>
+      <a href="#validation" data-i18n="nav.validation"></a>
+      <a href="#method" data-i18n="nav.method"></a>
+      <a href="#roadmap" data-i18n="nav.roadmap"></a>
+      <a href="#sources" data-i18n="nav.sources"></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="top" class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+          <h1 data-i18n="hero.title"></h1>
+          <p class="hero-lede" data-i18n="hero.lede"></p>
+          <div class="status-note">
+            <span class="status-dot" aria-hidden="true"></span>
+            <div>
+              <p class="status-title" data-i18n="hero.status.title"></p>
+              <p data-i18n-html="hero.status.body"></p>
+            </div>
+          </div>
+        </div>
+        <aside class="pump-card" aria-labelledby="heroCardTitle">
+          <div class="pump-card-head">
+            <span id="heroCardTitle" data-i18n="hero.card.title"></span>
+            <span data-prov="cc"></span>
+          </div>
+          <p class="pump-figure" id="heroPump"></p>
+          <div id="heroSeg"></div>
+          <a class="more-link" href="#structure"><span data-i18n="hero.card.more"></span><span class="arrow" aria-hidden="true">→</span></a>
+        </aside>
+      </div>
+
+      <div class="wrap">
+        <div class="context-grid" id="contextGrid"></div>
+
+        <div class="legend-card">
+          <h2 class="legend-title" data-i18n="legend.title"></h2>
+          <dl class="legend-grid">
+            <div><dt><span data-prov="cc"></span></dt><dd data-i18n="prov.cc.desc"></dd></div>
+            <div><dt><span data-prov="model"></span></dt><dd data-i18n="prov.model.desc"></dd></div>
+            <div><dt><span data-prov="press"></span></dt><dd data-i18n="prov.press.desc"></dd></div>
+            <div><dt><span data-prov="illus"></span></dt><dd data-i18n="prov.illus.desc"></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. Structure -->
+    <section id="structure" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker"><span class="kicker-num">01</span><span data-i18n="nav.structure"></span></p>
+          <h2 data-i18n="s1.title"></h2>
+          <p class="lede" data-i18n="s1.lede"></p>
+        </header>
+
+        <div class="seg-control" role="radiogroup" data-control="s1Product" data-i18n-attr="aria-label:product.choose">
+          <button type="button" role="radio" data-value="gasoil" data-i18n="product.gasoil"></button>
+          <button type="button" role="radio" data-value="ssp" data-i18n="product.ssp"></button>
+        </div>
+
+        <div class="structure-grid">
+          <div class="card">
+            <p class="card-label" data-i18n="s1.pump_label"></p>
+            <p class="hero-number" id="s1Pump"></p>
+            <h3 class="card-title" data-i18n="s1.split_title"></h3>
+            <div id="s1Seg"></div>
+            <ul class="points" id="s1Points"></ul>
+          </div>
+          <div class="card">
+            <h3 class="card-title" data-i18n="s1.waterfall_title"></h3>
+            <p class="card-sub" data-i18n="s1.waterfall_sub"></p>
+            <div class="chart-legend" id="s1Legend"></div>
+            <div id="s1Waterfall"></div>
+            <div class="table-slot" id="s1Table"></div>
+            <p class="source-line" id="s1Source"></p>
+          </div>
+        </div>
+
+        <details class="disclosure">
+          <summary data-i18n="common.equations"></summary>
+          <div class="disclosure-body">
+            <div class="math" data-tex="\begin{aligned} w &amp;= c + a + \theta \\ S &amp;= w + m \\ P &amp;= (S + r)\,(1+\tau) \end{aligned}"></div>
+            <p class="muted small" data-i18n="s1.eq.caption"></p>
+            <p data-i18n="s1.eq.share"></p>
+            <div class="math" data-tex="\frac{\theta + \text{VAT}}{P} = \frac{\theta}{P} + \frac{\tau}{1+\tau}"></div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 2. Builder -->
+    <section id="builder" class="section section-alt">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker"><span class="kicker-num">02</span><span data-i18n="nav.builder"></span></p>
+          <h2 data-i18n="s2.title"></h2>
+          <p class="lede" data-i18n="s2.lede"></p>
+        </header>
+
+        <div class="toolbar">
+          <div class="seg-control" role="radiogroup" data-control="bProduct" data-i18n-attr="aria-label:product.choose">
+            <button type="button" role="radio" data-value="gasoil" data-i18n="product.gasoil"></button>
+            <button type="button" role="radio" data-value="ssp" data-i18n="product.ssp"></button>
+          </div>
+          <button type="button" class="btn-ghost" id="bReset" data-i18n="common.reset"></button>
+        </div>
+
+        <div class="builder-grid">
+          <div class="card">
+            <div class="sliders" id="bSliders"></div>
+            <div class="fixed-row" id="bFixed"></div>
+            <details class="disclosure inner">
+              <summary data-i18n="s2.convert.title"></summary>
+              <div class="disclosure-body converter" id="bConverter"></div>
+            </details>
+          </div>
+          <div class="card result-card">
+            <p class="card-label" data-i18n="s2.result"></p>
+            <p class="hero-number" id="bPump" aria-live="polite"></p>
+            <p class="delta" id="bDelta"></p>
+            <p class="meta-line" id="bShare"></p>
+            <div id="bSeg"></div>
+            <p class="rule-note" id="bRule"></p>
+          </div>
+        </div>
+
+        <div class="card chart-card">
+          <h3 class="card-title" data-i18n="s2.chart.title"></h3>
+          <p class="card-sub" data-i18n="s2.chart.sub"></p>
+          <div class="chart-legend" id="bChartLegend"></div>
+          <div id="bChart"></div>
+          <div class="table-slot" id="bChartTable"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Pass-through -->
+    <section id="passthrough" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker"><span class="kicker-num">03</span><span data-i18n="nav.passthrough"></span></p>
+          <h2 data-i18n="s3.title"></h2>
+          <p class="lede" data-i18n="s3.lede"></p>
+        </header>
+
+        <div class="pt-grid">
+          <div class="card">
+            <h3 class="card-title" data-i18n="s3.chart.title"></h3>
+            <p class="card-sub" data-i18n="s3.chart.sub"></p>
+            <div class="chart-legend" id="ptLegend"></div>
+            <div id="ptChart"></div>
+            <div class="table-slot" id="ptTable"></div>
+            <ul class="points" id="ptEpisodes"></ul>
+            <p class="source-line" id="ptSource"></p>
+          </div>
+          <div class="stack">
+            <div class="callout">
+              <h3 data-i18n="s3.trap.title"></h3>
+              <p data-i18n="s3.trap.body"></p>
+              <div class="math" data-tex="\text{PT}^{\text{raw}} = \frac{\Delta P}{\Delta c} \qquad \text{PT}^{\text{adj}} = \frac{\Delta P}{(1+\tau)\,\Delta c}"></div>
+              <p class="small muted" id="ptHypothesis"></p>
+            </div>
+            <div class="card">
+              <h3 class="card-title" data-i18n="s3.calc.title"></h3>
+              <div class="calc" id="ptCalc"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="aside-note">
+          <h3 data-i18n="s3.asym.title"></h3>
+          <p data-i18n="s3.asym.body"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Stocks -->
+    <section id="stocks" class="section section-alt">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker"><span class="kicker-num">04</span><span data-i18n="nav.stocks"></span></p>
+          <h2 data-i18n="s4.title"></h2>
+          <p class="lede" data-i18n="s4.lede"></p>
+        </header>
+
+        <div class="card controls-card">
+          <div class="control-block" id="stDays"></div>
+          <div class="control-block">
+            <p class="control-label" id="stRuleLabel" data-i18n="s4.rule"></p>
+            <div class="seg-control" role="radiogroup" data-control="rule" aria-labelledby="stRuleLabel">
+              <button type="button" role="radio" data-value="replacement" data-i18n="s4.rule.replacement"></button>
+              <button type="button" role="radio" data-value="book" data-i18n="s4.rule.book"></button>
+            </div>
+          </div>
+          <span data-prov="illus"></span>
+        </div>
+
+        <div class="two-charts">
+          <div class="card chart-card">
+            <h3 class="card-title" data-i18n="s4.chart1.title"></h3>
+            <div class="chart-legend" id="stLegend1"></div>
+            <div id="stChart1"></div>
+            <div class="table-slot" id="stTable1"></div>
+          </div>
+          <div class="card chart-card">
+            <h3 class="card-title" data-i18n="s4.chart2.title"></h3>
+            <div class="chart-legend" id="stLegend2"></div>
+            <div id="stChart2"></div>
+            <div class="table-slot" id="stTable2"></div>
+          </div>
+        </div>
+
+        <p class="takeaway" data-i18n-html="s4.takeaway"></p>
+        <p class="small muted" id="stFacts"></p>
+
+        <details class="disclosure">
+          <summary data-i18n="common.equations"></summary>
+          <div class="disclosure-body">
+            <div class="math" data-tex="A_t = (1-\lambda)\,A_{t-1} + \lambda\,(c_t + a + \theta), \qquad \lambda = \frac{15}{D + 15}"></div>
+            <div class="math" data-tex="m^{H}_t = S_t - A_t \qquad m^{R}_t = S_t - (c_t + a + \theta)"></div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 5. Validation -->
+    <section id="validation" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker"><span class="kicker-num">05</span><span data-i18n="nav.validation"></span></p>
+          <h2 data-i18n="s5.title"></h2>
+          <p class="lede" data-i18n="s5.lede"></p>
+        </header>
+
+        <div class="check-badges" id="vBadges"></div>
+        <div class="card table-card">
+          <div class="table-scroll" id="vTable"></div>
+          <p class="source-line" id="vSource"></p>
+        </div>
+
+        <div class="two-col">
+          <div class="card">
+            <h3 class="card-title" data-i18n="s5.shows.title"></h3>
+            <ul class="points check-list" id="vShows"></ul>
+          </div>
+          <div class="card">
+            <h3 class="card-title" data-i18n="s5.not.title"></h3>
+            <ul class="points cross-list">
+              <li data-i18n="s5.not.1"></li>
+              <li data-i18n="s5.not.2"></li>
+              <li data-i18n="s5.not.3"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Method -->
+    <section id="method" class="section section-alt">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker"><span class="kicker-num">06</span><span data-i18n="nav.method"></span></p>
+          <h2 data-i18n="s6.title"></h2>
+          <p class="lede" data-i18n="s6.lede"></p>
+        </header>
+
+        <div class="principles">
+          <div class="principle"><span class="principle-num">1</span><h3 data-i18n="s6.p1.title"></h3><p data-i18n="s6.p1.body"></p></div>
+          <div class="principle"><span class="principle-num">2</span><h3 data-i18n="s6.p2.title"></h3><p data-i18n="s6.p2.body"></p></div>
+          <div class="principle"><span class="principle-num">3</span><h3 data-i18n="s6.p3.title"></h3><p data-i18n="s6.p3.body"></p></div>
+        </div>
+
+        <h3 class="sub-head" data-i18n="s6.ladder.title"></h3>
+        <p class="sub-lede" data-i18n="s6.ladder.lede"></p>
+        <ol class="ladder" id="mLadder"></ol>
+
+        <h3 class="sub-head" data-i18n="s6.hyp.title"></h3>
+        <p class="sub-lede" data-i18n="s6.hyp.lede"></p>
+        <div class="hyp-grid" id="mHyp"></div>
+      </div>
+    </section>
+
+    <!-- 7. Roadmap -->
+    <section id="roadmap" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker"><span class="kicker-num">07</span><span data-i18n="nav.roadmap"></span></p>
+          <h2 data-i18n="s7.title"></h2>
+          <p class="lede" data-i18n="s7.lede"></p>
+        </header>
+
+        <ol class="timeline" id="rPhases"></ol>
+
+        <div class="two-col">
+          <div class="card">
+            <h3 class="card-title" data-i18n="s7.tasks.title"></h3>
+            <ul class="task-list" id="rTasks"></ul>
+          </div>
+          <div class="card">
+            <h3 class="card-title" data-i18n="s7.decisions.title"></h3>
+            <ul class="decision-list" id="rDecisions"></ul>
+          </div>
+        </div>
+
+        <div class="card table-card">
+          <h3 class="card-title" data-i18n="s7.risks.title"></h3>
+          <div class="table-scroll" id="rRisks"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Sources -->
+    <section id="sources" class="section section-alt">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker"><span class="kicker-num">08</span><span data-i18n="nav.sources"></span></p>
+          <h2 data-i18n="s8.title"></h2>
+          <p class="lede" data-i18n="s8.lede"></p>
+        </header>
+
+        <div class="card table-card">
+          <h3 class="card-title" data-i18n="s8.constants.title"></h3>
+          <div class="table-scroll" id="srcConstants"></div>
+        </div>
+
+        <h3 class="sub-head" data-i18n="s8.list.title"></h3>
+        <div class="status-legend" id="srcStatusLegend"></div>
+        <div class="filter-row">
+          <div class="chips" id="srcFilters" role="group" data-i18n-attr="aria-label:s8.filter.label"></div>
+          <input type="search" id="srcSearch" class="search" data-i18n-attr="placeholder:s8.search,aria-label:s8.search">
+        </div>
+        <p class="small muted" id="srcCount" aria-live="polite"></p>
+        <div id="srcList"></div>
+
+        <h3 class="sub-head" data-i18n="s8.glossary.title"></h3>
+        <p class="sub-lede" data-i18n="s8.glossary.note"></p>
+        <div class="card table-card">
+          <div class="table-scroll" id="srcGlossary"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="brand-name foot-brand">mazoti<span class="brand-tld">.ma</span></p>
+      <p data-i18n="foot.disclaimer"></p>
+      <p class="small muted" id="footBuild"></p>
+      <p class="small muted"><span data-i18n="foot.translation"></span> <span data-i18n="foot.licence"></span></p>
+    </div>
+  </footer>
+
+  <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+
+  <script src="data/site_data.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/model.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

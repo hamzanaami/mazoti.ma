@@ -1,0 +1,11 @@
+period_start,product,d_cif_mad_per_l,d_pump_ttc_mad_per_l,spread_pump_minus_cif_as_stated_in_text,printed_period_sum_d_cif,printed_period_sum_d_pump,source_id,status,note
+2026-03-01,gasoil,0.21,0.39,0.18,4.24,4.18,cc_note3_2026,secondary,Spread not given in text for the two March essence fortnights; the note states no pass-through rate. Period labels are 'first half'/'second half' of the month.
+2026-03-16,gasoil,2.92,2.03,-0.89,,,cc_note3_2026,secondary,
+2026-04-01,gasoil,2.18,1.72,-0.46,,,cc_note3_2026,secondary,
+2026-04-16,gasoil,0.53,0.93,0.4,,,cc_note3_2026,secondary,
+2026-05-01,gasoil,-1.6,-0.89,0.71,,,cc_note3_2026,secondary,
+2026-03-01,ssp,0.17,0.43,,2.81,2.43,cc_note3_2026,secondary,Spread not given in text for the two March essence fortnights; the note states no pass-through rate. Period labels are 'first half'/'second half' of the month.
+2026-03-16,ssp,1.26,1.43,,,,cc_note3_2026,secondary,
+2026-04-01,ssp,1.37,1.52,,,,cc_note3_2026,secondary,
+2026-04-16,ssp,0.11,0.06,-0.05,,,cc_note3_2026,secondary,
+2026-05-01,ssp,-0.1,-1.01,-0.91,,,cc_note3_2026,secondary,

@@ -1,0 +1,131 @@
+period,scope,metric,product,value,unit,source_id,status,note
+2023-Q1,nine_companies,sales_volume,gasoil,1425733,thousand_litres,cc_q1_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2024-Q1,nine_companies,sales_volume,gasoil,1466656,thousand_litres,cc_q1_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2023-Q1,nine_companies,sales_volume,ssp,204366,thousand_litres,cc_q1_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2024-Q1,nine_companies,sales_volume,ssp,241384,thousand_litres,cc_q1_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2025-Q1,nine_companies,sales_volume,gasoil,1425517,thousand_litres,cc_q1_2025,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2025-Q1,nine_companies,sales_volume,ssp,242311,thousand_litres,cc_q1_2025,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2023-Q2,nine_companies,sales_volume,gasoil,1524677,thousand_litres,cc_q2_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2024-Q2,nine_companies,sales_volume,gasoil,1467355,thousand_litres,cc_q2_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2023-Q2,nine_companies,sales_volume,ssp,244031,thousand_litres,cc_q2_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2024-Q2,nine_companies,sales_volume,ssp,263581,thousand_litres,cc_q2_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2024-Q2,nine_companies,sales_volume,gasoil,1536926,thousand_litres,cc_q2_2025,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2025-Q2,nine_companies,sales_volume,gasoil,1598246,thousand_litres,cc_q2_2025,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2024-Q2,nine_companies,sales_volume,ssp,272910,thousand_litres,cc_q2_2025,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2025-Q2,nine_companies,sales_volume,ssp,286812,thousand_litres,cc_q2_2025,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2023-Q3,nine_companies,sales_volume,gasoil,1647062,thousand_litres,cc_q3_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2024-Q3,nine_companies,sales_volume,gasoil,1591272,thousand_litres,cc_q3_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2023-Q3,nine_companies,sales_volume,ssp,282269,thousand_litres,cc_q3_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2024-Q3,nine_companies,sales_volume,ssp,307418,thousand_litres,cc_q3_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2025-Q3,nine_companies,sales_volume,gasoil,1675180,thousand_litres,cc_q3_2025,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2025-Q3,nine_companies,sales_volume,ssp,310648,thousand_litres,cc_q3_2025,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2023-Q4,nine_companies,sales_volume,gasoil,1514942,thousand_litres,cc_q4_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2024-Q4,nine_companies,sales_volume,gasoil,1606741,thousand_litres,cc_q4_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2023-Q4,nine_companies,sales_volume,ssp,260916,thousand_litres,cc_q4_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2024-Q4,nine_companies,sales_volume,ssp,294721,thousand_litres,cc_q4_2024,secondary,"chart label as printed; the same quarter can differ slightly between reports (restatements, extraction)"
+2023-Q1,nine_companies,sales_value,gasoil,16330,MDH,cc_q1_2024,secondary,
+2024-Q1,nine_companies,sales_value,gasoil,16042,MDH,cc_q1_2024,secondary,
+2023-Q1,nine_companies,sales_value,ssp,2540,MDH,cc_q1_2024,secondary,
+2024-Q1,nine_companies,sales_value,ssp,2933,MDH,cc_q1_2024,secondary,
+2025-Q1,nine_companies,sales_value,gasoil,13803,MDH,cc_q1_2025,secondary,
+2025-Q1,nine_companies,sales_value,ssp,2749,MDH,cc_q1_2025,secondary,
+2023-Q2,nine_companies,sales_value,gasoil,15448.512,MDH,cc_q2_2024,secondary,chart labelled thousand DH; converted to MDH
+2024-Q2,nine_companies,sales_value,gasoil,15637.444,MDH,cc_q2_2024,secondary,chart labelled thousand DH; converted to MDH
+2023-Q2,nine_companies,sales_value,ssp,2987.617,MDH,cc_q2_2024,secondary,chart labelled thousand DH; converted to MDH
+2024-Q2,nine_companies,sales_value,ssp,3309.81,MDH,cc_q2_2024,secondary,chart labelled thousand DH; converted to MDH
+2024-Q2,nine_companies,sales_value,gasoil,16377,MDH,cc_q2_2025,secondary,"differs from Q2 2024 report (15637); restatement or extraction issue, verify"
+2025-Q2,nine_companies,sales_value,gasoil,14174,MDH,cc_q2_2025,secondary,
+2024-Q2,nine_companies,sales_value,ssp,3430,MDH,cc_q2_2025,secondary,"differs from Q2 2024 report (3310), verify"
+2025-Q2,nine_companies,sales_value,ssp,3094,MDH,cc_q2_2025,secondary,
+2023-Q4,nine_companies,sales_value,gasoil,17704.429,MDH,cc_q4_2024,secondary,chart labelled thousand DH; converted to MDH
+2024-Q4,nine_companies,sales_value,gasoil,15228.168,MDH,cc_q4_2024,secondary,chart labelled thousand DH; converted to MDH
+2023-Q4,nine_companies,sales_value,ssp,3285.254,MDH,cc_q4_2024,secondary,chart labelled thousand DH; converted to MDH
+2024-Q4,nine_companies,sales_value,ssp,3118.955,MDH,cc_q4_2024,secondary,chart labelled thousand DH; converted to MDH
+2024-Q1,market,imports_volume,total,1470,thousand_tonnes,cc_q1_2024,secondary,"text: 1.47 Mt, 12.89 MMDH"
+2024-Q1,market,imports_value,total,12890,MDH,cc_q1_2024,secondary,"text: 1.47 Mt, 12.89 MMDH"
+2025-Q1,market,imports_volume,total,1620,thousand_tonnes,cc_q1_2025,secondary,text: about 1.62 Mt and about 12 MMDH
+2025-Q1,market,imports_value,total,12000,MDH,cc_q1_2025,secondary,text: about 1.62 Mt and about 12 MMDH
+2024-Q2,market,imports_volume,total,1650,thousand_tonnes,cc_q2_2024,secondary,text: 1.65 Mt; 14.03 MMDH
+2024-Q2,market,imports_value,total,14030,MDH,cc_q2_2024,secondary,text: 1.65 Mt; 14.03 MMDH
+2025-Q2,market,imports_volume,total,1720,thousand_tonnes,cc_q2_2025,secondary,text: about 1.72 Mt; about 10.93 MMDH
+2025-Q2,market,imports_value,total,10930,MDH,cc_q2_2025,secondary,text: about 1.72 Mt; about 10.93 MMDH
+2024-Q3,market,imports_volume,total,1700,thousand_tonnes,cc_q3_2024,secondary,text also gives 14.03 MMDH in the conclusion (likely carried over from Q2); verify
+2024-Q3,market,imports_value,total,12900,MDH,cc_q3_2024,secondary,text also gives 14.03 MMDH in the conclusion (likely carried over from Q2); verify
+2025-Q3,market,imports_volume,total,1910,thousand_tonnes,cc_q3_2025,secondary,text: 1.91 Mt; 12.73 MMDH
+2025-Q3,market,imports_value,total,12730,MDH,cc_q3_2025,secondary,text: 1.91 Mt; 12.73 MMDH
+2024-Q4,market,imports_volume,total,1680,thousand_tonnes,cc_q4_2024,secondary,text: 1.68 Mt; about 12 MMDH
+2024-Q4,market,imports_value,total,12000,MDH,cc_q4_2024,secondary,text: 1.68 Mt; about 12 MMDH
+2025-Q4,market,imports_volume,total,1690,thousand_tonnes,cc_q4_2025,secondary,text: about 1.69 Mt; 11.45 MMDH
+2025-Q4,market,imports_value,total,11450,MDH,cc_q4_2025,secondary,text: about 1.69 Mt; 11.45 MMDH
+2024-Q1,nine_companies,imports_volume,total,1276,thousand_tonnes,cc_q1_2024,secondary,Graphique 1
+2024-Q1,nine_companies,imports_value,total,11210,MDH,cc_q1_2024,secondary,Graphique 1
+2025-Q1,nine_companies,imports_volume,total,1334,thousand_tonnes,cc_q1_2025,secondary,Graphique 4
+2025-Q1,nine_companies,imports_value,total,9900,MDH,cc_q1_2025,secondary,Graphique 4
+2024-Q2,nine_companies,imports_volume,total,1401,thousand_tonnes,cc_q2_2024,secondary,Graphiques 1-3
+2024-Q2,nine_companies,imports_value,total,11961,MDH,cc_q2_2024,secondary,Graphiques 1-3
+2025-Q2,nine_companies,imports_volume,total,1385,thousand_tonnes,cc_q2_2025,secondary,Graph 1: 13849 (x100 t)
+2025-Q2,nine_companies,imports_value,total,8784,MDH,cc_q2_2025,secondary,Graph 1: 13849 (x100 t)
+2024-Q3,nine_companies,imports_volume,total,1429,thousand_tonnes,cc_q3_2024,secondary,Graphique 1
+2024-Q3,nine_companies,imports_value,total,10889,MDH,cc_q3_2024,secondary,Graphique 1
+2025-Q3,nine_companies,imports_volume,total,1560,thousand_tonnes,cc_q3_2025,secondary,Graphique 1: 15596 (x100 t)
+2025-Q3,nine_companies,imports_value,total,10386,MDH,cc_q3_2025,secondary,Graphique 1: 15596 (x100 t)
+2024-Q4,nine_companies,imports_volume,total,1377,thousand_tonnes,cc_q4_2024,secondary,text
+2024-Q4,nine_companies,imports_value,total,9840,MDH,cc_q4_2024,secondary,text
+2023-Q1,market,tic_receipts,both,4.27,MMDH,cc_q1_2024,secondary,Tableau 1
+2023-Q1,market,tva_receipts,both,1.78,MMDH,cc_q1_2024,secondary,Tableau 1
+2024-Q1,market,tic_receipts,both,4.65,MMDH,cc_q1_2024,secondary,Tableau 1
+2024-Q1,market,tva_receipts,both,1.8,MMDH,cc_q1_2024,secondary,Tableau 1
+2025-Q1,market,tic_receipts,both,5.13,MMDH,cc_q1_2025,secondary,Tableaux 5-6
+2025-Q1,market,tva_receipts,both,1.73,MMDH,cc_q1_2025,secondary,Tableaux 5-6
+2023-Q2,market,tic_receipts,both,4.71,MMDH,cc_q2_2024,secondary,Tableau 1
+2023-Q2,market,tva_receipts,both,1.7,MMDH,cc_q2_2024,secondary,Tableau 1
+2024-Q2,market,tic_receipts,both,5.23,MMDH,cc_q2_2024,secondary,Tableau 1
+2024-Q2,market,tva_receipts,both,1.96,MMDH,cc_q2_2024,secondary,Tableau 1
+2025-Q2,market,tic_receipts,both,5.49,MMDH,cc_q2_2025,secondary,text
+2025-Q2,market,tva_receipts,both,1.67,MMDH,cc_q2_2025,secondary,text
+2023-Q3,market,tic_receipts,both,4.84,MMDH,cc_q3_2024,secondary,Tableau 1
+2023-Q3,market,tva_receipts,both,1.92,MMDH,cc_q3_2024,secondary,Tableau 1
+2024-Q3,market,tic_receipts,both,5.35,MMDH,cc_q3_2024,secondary,Tableau 1
+2024-Q3,market,tva_receipts,both,1.86,MMDH,cc_q3_2024,secondary,Tableau 1
+2025-Q3,market,tic_receipts,both,5.95,MMDH,cc_q3_2025,secondary,Tableau 1
+2025-Q3,market,tva_receipts,both,1.88,MMDH,cc_q3_2025,secondary,Tableau 1
+2023-Q4,market,tic_receipts,both,4.53,MMDH,cc_q4_2024,secondary,Tableau 1
+2023-Q4,market,tva_receipts,both,1.83,MMDH,cc_q4_2024,secondary,Tableau 1
+2024-Q4,market,tic_receipts,both,5.34,MMDH,cc_q4_2024,secondary,Tableau 1
+2024-Q4,market,tva_receipts,both,1.76,MMDH,cc_q4_2024,secondary,Tableau 1
+2024-Q1,nine_companies,tic_receipts,both,4.07,MMDH,cc_q1_2024,secondary,Tableau 3
+2024-Q1,nine_companies,tva_receipts,both,1.58,MMDH,cc_q1_2024,secondary,Tableau 3
+2025-Q1,nine_companies,tic_receipts,both,4.27,MMDH,cc_q1_2025,secondary,Tableau 7
+2025-Q1,nine_companies,tva_receipts,both,1.43,MMDH,cc_q1_2025,secondary,Tableau 7
+2024-Q2,nine_companies,tic_receipts,both,4.47,MMDH,cc_q2_2024,secondary,text
+2024-Q2,nine_companies,tva_receipts,both,1.67,MMDH,cc_q2_2024,secondary,text
+2025-Q2,nine_companies,tic_receipts,both,4.45,MMDH,cc_q2_2025,secondary,text
+2025-Q2,nine_companies,tva_receipts,both,1.36,MMDH,cc_q2_2025,secondary,text
+2025-Q3,nine_companies,tic_receipts,both,4.89,MMDH,cc_q3_2025,secondary,Tableau 3
+2025-Q3,nine_companies,tva_receipts,both,1.53,MMDH,cc_q3_2025,secondary,Tableau 3
+2024-Q4,nine_companies,tic_receipts,both,4.41,MMDH,cc_q4_2024,secondary,text
+2024-Q4,nine_companies,tva_receipts,both,1.45,MMDH,cc_q4_2024,secondary,text
+2025,market,tic_receipts,both,21.16,MMDH,cc_q4_2025,secondary,annual
+2024,market,tic_receipts,both,21.43,MMDH,cc_q4_2025,secondary,annual
+2025,market,tva_receipts,both,7.29,MMDH,cc_q4_2025,secondary,annual
+2024,market,tva_receipts,both,7.12,MMDH,cc_q4_2025,secondary,annual
+2022,market,tic_receipts,both,18.42,MMDH,cc_2023,secondary,"annual, both products"
+2023,market,tic_receipts,both,18.34,MMDH,cc_2023,secondary,"annual, both products"
+2022,market,tva_receipts,both,8.61,MMDH,cc_2023,secondary,"annual, both products"
+2023,market,tva_receipts,both,7.23,MMDH,cc_2023,secondary,"annual, both products"
+2024,nine_companies,gross_margin,gasoil,1.35,MAD/L,cc_q4_2024,secondary,Tableau 6 weighted; Q1 2025 report conclusion gives 1.34; verify
+2024,nine_companies,gross_margin,ssp,1.88,MAD/L,cc_q4_2024,secondary,Tableau 6 weighted; Q1 2025 report conclusion gives 1.85; verify
+2024,nine_companies,net_margin,gasoil,0.43,MAD/L,cc_q1_2025,secondary,Tableau 2
+2024,nine_companies,net_margin,ssp,0.61,MAD/L,cc_q1_2025,secondary,Tableau 2
+2018-2021 avg,market,gross_margin,gasoil,1.26,MAD/L,cc_2023,secondary,Tableau 6
+2018-2021 avg,market,gross_margin,ssp,1.34,MAD/L,cc_2023,secondary,Tableau 6
+2022,market,gross_margin,gasoil,0.69,MAD/L,cc_2023,secondary,Tableau 6
+2022,market,gross_margin,ssp,0.78,MAD/L,cc_2023,secondary,Tableau 6
+2023,market,gross_margin,gasoil,0.76,MAD/L,cc_2023,secondary,Tableau 5/6
+2023,market,gross_margin,ssp,1.38,MAD/L,cc_2023,secondary,Tableau 5/6
+2023,market,avg_cif,gasoil,7.23,MAD/L,cc_2023,secondary,"Tableau 1, excl. TIC and VAT"
+2023,market,avg_cif,ssp,6.91,MAD/L,cc_2023,secondary,Tableau 1
+2023,market,avg_purchase_cost_ht,gasoil,10.33,MAD/L,cc_2023,secondary,Tableau 1
+2023,market,avg_purchase_cost_ht,ssp,11.42,MAD/L,cc_2023,secondary,Tableau 1
+2023,market,avg_pump_price_ht,gasoil,11.67,MAD/L,cc_2023,secondary,"Tableau 1; HT basis, not TTC"
+2023,market,avg_pump_price_ht,ssp,13.21,MAD/L,cc_2023,secondary,"Tableau 1; HT basis, not TTC"

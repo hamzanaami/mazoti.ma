@@ -1,0 +1,4 @@
+date,time,city,brand,station_name,address,product,price_mad_per_l,photo_file,notes
+2026-11-16,09:30,Casablanca,Afriquia,Example station 1,Bd Zerktouni,gasoil,16.70,IMG_0001.jpg,example row: delete me
+2026-11-16,09:35,Casablanca,Afriquia,Example station 1,Bd Zerktouni,ssp95,15.00,IMG_0002.jpg,example row: delete me
+2026-11-16,10:10,Rabat,Petrom,Example station 2,Av. Mohammed V,gasoil,16.68,,example row: delete me

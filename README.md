@@ -21,6 +21,7 @@ transparent, reproducible model and, later, a website.
 | `CLAUDE.md` | Rules and context for Claude and contributors |
 | `docs/plan.md` | Phased roadmap, deliverables and open questions |
 | `docs/theory/` | The mathematics: price structure, pass-through, data analysis |
+| `docs/latex/` | `mazoti_theory.tex/.pdf`: the full explanatory document; `make_examples.py` generates its numbers (`PYTHONPATH=src python docs/latex/make_examples.py`) |
 | `docs/sources.md` | Data sources and reading list, with verification status |
 | `docs/glossary.md` | FR / AR / EN vocabulary |
 | `docs/decisions/` | Architecture and modelling decision records |
@@ -28,7 +29,9 @@ transparent, reproducible model and, later, a website.
 | `tests/` | Tests, including the check against Competition Council figures |
 | `site/` | Static showcase site (Arabic first, French, English), see below |
 | `scripts/` | `build_site_data.py`: writes the site's numbers from the model |
-| `data/` | Local data, not committed |
+| `data/reference/` | Competition Council figures transcribed with sources and checks, see its README |
+| `templates/` | Station-price collection template; validate with `scripts/validate_station_prices.py` (guide: `docs/data-collection.md`) |
+| `data/raw/`, `data/processed/` | Local data, not committed |
 
 ## Quick start
 

@@ -130,3 +130,17 @@ All `[from memory]`; verify before citing:
 6. Search French and Arabic academic literature for a Morocco-specific asymmetry study since 2016
    (the English search did not surface one).
 7. Check the status of Mahatati and any station-price data the government publishes.
+
+## Transcribed data (added 2026-11-18)
+
+Tables from the CC reports (2023 analysis, Q1 2024 to Q4 2025, and the 1 Jun 2026 note) are
+in `data/reference/` with a manifest of URLs, checks in `tests/test_reference_data.py`, and a
+list of inconsistencies in the CC documents. All `[secondary]`: read through a text fetch, to be
+verified against the PDFs. Reports used beyond those listed above:
+2023 global analysis <https://conseil-concurrence.ma/wp-content/uploads/2024/04/Rapport-Reporting-Hydrocarbure-.pdf>;
+Q1 2024 <https://conseil-concurrence.ma/wp-content/uploads/2024/07/Rapport-Gasoil-FR-08072024.pdf>;
+Q2 2024 <https://conseil-concurrence.ma/wp-content/uploads/2024/11/Rapport-Gasoil-N%C2%B03.pdf>;
+Q3 2024 (copy) <https://lodj.ma/attachment/2690444>;
+Q2 2025 <https://conseil-concurrence.ma/wp-content/uploads/2025/11/Rapport-Gasoil-FR-12112025.pdf>;
+Q3 2025 <https://conseil-concurrence.ma/wp-content/uploads/2026/01/Reporting-du-3eme-trimestre-de-lannee-2025-Conseil-de-la-concurrence-FR.pdf>;
+Note Hydrocarbures n°3 <https://conseil-concurrence.ma/wp-content/uploads/2026/06/Note-Hydricarbures-N%C2%B03-01.06.2026.pdf>.

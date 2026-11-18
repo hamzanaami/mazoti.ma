@@ -22,3 +22,12 @@ data/processed/*
 .DS_Store
 .idea/
 .vscode/
+
+# LaTeX build files (keep .tex and the final .pdf)
+docs/latex/*.aux
+docs/latex/*.log
+docs/latex/*.out
+docs/latex/*.toc
+docs/latex/*.fls
+docs/latex/*.fdb_latexmk
+docs/latex/build.log

@@ -1,0 +1,17 @@
+quarter,product,cif_mad_per_l,purchase_cost_ht_mad_per_l,cession_ht_mad_per_l,pump_ttc_mad_per_l,weighted_gross_margin_mad_per_l,source_id,status,note
+2024-Q1,gasoil,8.51,10.18,11.45,,1.46,cc_q1_2024,secondary,"Table 6, Table 10; pump price not found"
+2024-Q1,ssp,8.67,10.86,12.72,14.77,2.07,cc_q1_2024,secondary,"Table 6, Table 10; pump 14.77 from text is TO VERIFY: the six fortnightly levels average 14.62 (14.77 equals the 1Q-Jul-2024 level)"
+2024-Q2,gasoil,6.89,9.90,11.13,,1.21,cc_q2_2024,secondary,"Tableau 5, Tableau 9; pump price not found"
+2024-Q2,ssp,7.14,11.25,13.04,,1.79,cc_q2_2024,secondary,"Tableau 5, Tableau 9; pump price not found"
+2024-Q3,gasoil,6.36,9.24,10.76,,1.46,cc_q3_2024,secondary,Tableau 5; pump price not found
+2024-Q3,ssp,6.27,10.65,12.62,,2.00,cc_q3_2024,secondary,Tableau 5; pump price not found
+2024-Q4,gasoil,5.82,8.65,9.94,11.57,1.28,cc_q4_2024,secondary,"Tableau 4, Tableau 7; text gives cession 9.97 vs table 9.94"
+2024-Q4,ssp,5.52,9.97,11.66,13.51,1.67,cc_q4_2024,secondary,"Tableau 4, Tableau 7; text gives cost 9.94 vs table 9.97"
+2025-Q1,gasoil,6.14,8.72,10.02,11.59,1.24,cc_q1_2025,secondary,Tableau 10; pump from text
+2025-Q1,ssp,5.64,9.73,11.73,13.53,1.95,cc_q1_2025,secondary,Tableau 10; pump from text
+2025-Q2,gasoil,5.14,8.09,9.31,10.83,1.17,cc_q2_2025,secondary,text sections III-IV
+2025-Q2,ssp,5.14,9.22,11.17,12.92,1.83,cc_q2_2025,secondary,text sections III-IV
+2025-Q3,gasoil,5.21,8.11,9.62,11.13,1.48,cc_q3_2025,secondary,Tableau 6; pump from text
+2025-Q3,ssp,5.52,9.09,11.32,13.03,2.10,cc_q3_2025,secondary,Tableau 6; pump from text
+2025-Q4,gasoil,5.59,8.10,9.38,10.87,1.23,cc_q4_2025,secondary,Tableau 8; pump from text; matches constants in src/mazoti/cc_reports.py
+2025-Q4,ssp,5.12,9.00,11.06,12.82,1.85,cc_q4_2025,secondary,Tableau 8; pump from text; matches constants in src/mazoti/cc_reports.py
